@@ -1,0 +1,31 @@
+/**
+ * @author ZMN
+ * @since 2019/11/6
+ * @desc 基础尺寸样式
+ * @remark
+ */
+
+$page-width: 1190px; // 页面主体内容最大宽度
+$max-width: 768px; // 移动端宽度临界值
+
+// 内容小板块间距 10
+$section-xs: px2vw(10);
+// 特殊版块和标题版块间距 12
+$section-sm: px2vw(12);
+// 主容器水平方向padding
+$section-md: px2vw(16);
+// 内容大板块间距 24
+$section-lg: 24;
+// 状态栏高度
+$status-bar-h: 20;
+// 顶部导航高度
+$nav-bar-h: 44;
+// 底部菜单高度
+$menu-bar-h: 49;
+
+// 基础混合样式
+// 宽度、高度100%
+@mixin wh100 {
+  width: 100%;
+  height: 100%;
+}

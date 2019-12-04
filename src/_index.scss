@@ -1,0 +1,28 @@
+/**
+ * @author ZMN
+ * @since 2019/11/6
+ * @desc SCSS集中引入
+ * @remark
+ */
+
+// 基础方法
+@import "_function";
+// 颜色
+@import "_colors";
+// 位置
+@import "_position";
+// 显示
+@import "_display";
+// 大小
+@import "_size";
+// 间距
+//@import "_spacing";
+// 文字
+@import "_font";
+// 边框
+@import "_border";
+// 背景
+@import "_background";
+@import "_text";
+// 其他（css3 等）
+@import "_skeleton";

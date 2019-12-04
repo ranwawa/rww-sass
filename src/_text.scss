@@ -1,0 +1,25 @@
+/**
+ * @author ZMN
+ * @since 2019/11/6
+ * @desc 基础文本样式
+ * @remark
+ */
+
+// 文本超出宽度显示省略号
+// $rows 行数,默认1行
+@mixin text-truncate($rows: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @if $rows == 1 {
+    white-space: nowrap;
+  } @else {
+    display: -webkit-box;
+    -webkit-line-clamp: $rows;
+    -webkit-box-orient: vertical;
+  }
+}
+
+@mixin h-lh($height) {
+  height: px2upx($height);
+  line-height: px2upx($height);
+}

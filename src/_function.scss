@@ -1,0 +1,19 @@
+/**
+ * @author ZMN
+ * @since 2019/11/6
+ * @desc 基础方法
+ * @remark
+ */
+
+$design-width: 375;
+// px单位转换为upx
+@function px2upx($num) {
+  @return $num + upx;
+}
+// px单位转换为vw
+@function px2vw($num) {
+  @return $num / ($design-width / 100) + vw;
+}
+
+
+

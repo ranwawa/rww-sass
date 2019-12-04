@@ -1,0 +1,40 @@
+/**
+ * @author ZMN
+ * @since 2019/11/6
+ * @desc 基础位置样式
+ * @remark
+ */
+
+// 定位层级
+$z-dropdown: 500 !default;
+$z-sticky: 520 !default;
+$z-fixed: 530 !default;
+$z-modal-backdrop: 1040 !default;
+$z-modal: 550 !default;
+$z-popover: 560 !default;
+$z-tooltip: 570 !default;
+
+// 悬浮
+@mixin fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: $z-fixed;
+}
+
+@mixin fixed-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $z-fixed;
+}
+
+@mixin sticky-top {
+  @supports (position: sticky) {
+    position: sticky;
+    top: 0;
+    z-index: $z-sticky;
+  }
+}

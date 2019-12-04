@@ -1,0 +1,41 @@
+/**
+  * @author ZMN
+  * @since 2019/11/12
+  * @desc 骨架屏基础样式
+  * @remark
+ */
+
+// 尺寸
+@mixin skeleton-screen {
+  width: 100vw;
+  height: 100vh;
+}
+
+// 扫光
+@mixin skeleton-light {
+  position: relative;
+  overflow: hidden;
+  background-color: $sk-base;
+
+  &:after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 1;
+    width: px2vw(20);
+    height: 120%;
+    content: '';
+    background: $sk-base -webkit-linear-gradient(left, $sk-base, $sk-light) 0 0 no-repeat;
+    transform: rotate(10deg) translate(-100%, -50%);
+    animation: skeleton-light-slideShine 1s infinite;
+  }
+}
+
+@-webkit-keyframes skeleton-light-slideShine {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}

@@ -1,0 +1,15 @@
+/**
+ * @author ZMN
+ * @since 2019/11/6
+ * @desc 清除浮动
+ * @remark
+ */
+
+// 清除浮动
+@mixin clearfix {
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
