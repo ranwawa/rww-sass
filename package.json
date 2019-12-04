@@ -1,0 +1,19 @@
+{
+  "name": "rww-sass",
+  "version": "1.0.0",
+  "description": "项目基础sass库",
+  "main": "_index.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranwawa/rww-sass.git"
+  },
+  "author": "冉娃娃",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ranwawa/rww-sass/issues"
+  },
+  "homepage": "https://github.com/ranwawa/rww-sass#readme"
+}
