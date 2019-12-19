@@ -19,7 +19,3 @@
   }
 }
 
-@mixin h-lh($height) {
-  height: px2upx($height);
-  line-height: px2upx($height);
-}
