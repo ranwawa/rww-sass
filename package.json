@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ranwawa/rww-sass/issues"
   },
-  "homepage": "https://github.com/ranwawa/rww-sass#readme"
+  "homepage": "https://github.com/ranwawa/rww-sass#readme",
+  "devDependencies": {
+    "husky": "^3.1.0"
+  }
 }
