@@ -1,51 +1,46 @@
 /**
- * @author ZMN
+ * @author RWW
  * @since 2019/11/6
  * @desc 基础颜色样式
- * @remark
  */
 
-// 主题色
-// 一个网站只有一个主题色，不同的网站需要修改
-$c-theme: #F05B28;
-$c-theme-light: #FE8513;
-$white: #FFF;
-$black: #000;
-
-// 文字色
-// 所有网站通用的文字颜色
-// #333 主文字颜色，用于页面标题/重要信息
-$c-base: #333;
-// #666 副文字颜色，用于常规信息/辅助信息/次要信息
-$c-gray: #666;
-// #999 副文字颜色，用于常规信息/辅助信息/次要信息
-$c-light: #999;
-// #CCC 暗文字色，用于暗文字/失效文字
-$c-muted: #CCC;
-
 /*
-* 背景色
-* 所有网站通用的背景颜色
-*/
-// #F5F5F5 页面背景色，用于页面背景/默认图片背景/小标签背景
-$bgc-base: #F5F5F5;
-// #F8F8F8 组件背景色，用于卡片/控件/按下背景
-$bgc-comp: #F8F8F8;
+ * 主题色
+ * 一个网站只有一个主题色，不同的网站需要修改
+ */
+$c-theme: #f05b28 !default;
+$c-theme-light: #fe8513 !default;
+$white: #fff !default;
+$white-1: #ffffff1a !default;
+$white-4: #ffffff66 !default;
+$black: #000 !default;
+$black-1: #0000001a !default;
+$black-4: #00000066 !default;
+$gray-3: #333 !default;
+$gray-6: #666 !default;
+$gray-9: #999 !default;
+$gray-c: #ccc !default;
+$gray-e: #eee !default;
+$gray-f5: #f5f5f5 !default;
+$gray-f8: #f8f8f8 !default;
 
-/*
-* 边框色
-* 所有网站通用的边框颜色
-*/
-// #EEE 内容分割线色，用于内容/列表分割线
-$bdc-base: #EEE;
-// #CCC 组件分割线色，用于弹框/功能/按钮分割线
-$bdc-comp: #CCC;
+/* 文字色 */
+$c-base: $gray-3; // #333 主文字颜色，用于页面标题/重要信息
+$c-gray: $gray-6; // #666 副文字颜色，用于常规信息/辅助信息/次要信息
+$c-light: $gray-9; // #999 副文字颜色，用于常规信息/辅助信息/次要信息
+$c-muted: $gray-c; // #CCC 暗文字色，用于暗文字/失效文字
 
-// 阴影色
-$bsc-base: rgba(0, 0, 0, .1);
+/* 背景色 */
+$bgc-base: $gray-f5; // #f5f5f5 页面背景色，用于页面背景/默认图片背景/小标签背景
+$bgc-comp: $gray-f8; // #f8f8f8 组件背景色，用于卡片/控件/按下背景
 
-// 骨架屏颜色
-// #DDD 元素方块背景色
-$sk-base: #DDD;
-// #E2E2E2 扫光渐变色
-$sk-light: #E2E2E2;
+/* 边框色 */
+$bdc-base: $gray-e; // #EEE 内容分割线色，用于内容/列表分割线
+$bdc-comp: $gray-c; // #CCC 组件分割线色，用于弹框/功能/按钮分割线
+
+/* 阴影色 */
+$bsc-base: $black-1;
+
+/* 骨架屏颜色 */
+$sk-base: #DDD; // #DDD 元素方块背景色
+$sk-light: #E2E2E2; // #E2E2E2 扫光渐变色

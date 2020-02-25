@@ -1,33 +1,24 @@
 /**
- * @author ZMN
+ * @author RWW
  * @since 2019/11/6
  * @desc 基础尺寸样式
- * @remark
  */
 
-$page-width: 1190px; // 页面主体内容最大宽度
-$max-width: 768px; // 移动端宽度临界值
+/* 块间尺寸 */
+$section-xs: px2vw(8) !default; // 8 内容小板块间距
+$section-sm: px2vw(14) !default; // 14 特殊版块和标题版块间距
+$section-md: px2vw(16) !default; // 16 主容器水平方向padding
+$section-lg: px2vw(20) !default; // 20 内容大板块间距
+$section-xl: px2vw(24) !default; // 24
 
-// 10 内容小板块间距
-$section-xs: px2vw(10);
-// 12 特殊版块和标题版块间距
-$section-sm: px2vw(12);
-// 14 主容器水平方向padding
-$section-md: px2vw(14);
-// 16 内容大板块间距
-$section-lg: px2vw(16);
-// 18
-$section-xl: px2vw(18);
-// 状态栏高度
-$status-bar-h: px2vw(20);
-// 顶部导航高度
-$nav-bar-h: px2vw(44);
-// 底部菜单高度
-$menu-bar-h: px2vw(49);
+/* 字体大小 */
+$fz-xl: px2vw(18) !default; // 18 大标题字号，用于顶部导航标题
+$fz-lg: px2vw(16) !default; // 16 小标题字号，用于正文标题，着重显示文字
+$fz-md: px2vw(14) !default; // 14 正文字号，用于内容文本
+$fz-sm: px2vw(12) !default; // 12 提示字号，用于备注/菜单分割/标签
+$fz-xs: px2vw(10) !default;
 
-// 基础混合样式
-// 宽度、高度100%
-@mixin wh100 {
-  width: 100%;
-  height: 100%;
-}
+/* 边框尺寸 */
+$bdrs-sm: px2vw(4) !default; // 小圆角，用于按钮
+$bdrs-lg: px2vw(8) !default; // 大圆角，用于块儿
+

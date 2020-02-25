@@ -1,20 +1,15 @@
 /**
- * @author ZMN
+ * @author RWW
  * @since 2019/11/6
  * @desc 基础边框样式
- * @remark
  */
 
-// 大圆角，用于块儿
-$bdrs-lg: px2vw(8);
-// 小圆角，用于按钮
-$bdrs-sm: px2vw(4);
-// 默认分割线
-// 内容分割线
-$bd-base: 1px solid $bdc-base;
-// 组件分割线
-$bd-comp: 1px solid $bdc-comp;
-// 默认阴影
-$bs-base: 0 0 px2vw(10) $bsc-base;
+
+/* 分割线 */
+$bd-base: 1px solid $bdc-base; // 内容分割线
+$bd-comp: 1px solid $bdc-comp; // 组件分割线
+
+/* 阴影 */
+$bs-base: 0 0 px2vw(10) $bsc-base; // 默认阴影
 
 

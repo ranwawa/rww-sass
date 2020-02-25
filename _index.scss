@@ -1,8 +1,7 @@
 /**
- * @author ZMN
+ * @author RWW
  * @since 2019/11/6
  * @desc SCSS集中引入
- * @remark
  */
 
 // 基础方法
@@ -15,10 +14,6 @@
 @import "_display";
 // 大小
 @import "_size";
-// 间距
-//@import "_spacing";
-// 文字
-@import "_font";
 // 边框
 @import "_border";
 // 背景
