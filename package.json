@@ -1,6 +1,6 @@
 {
   "name": "rww-sass",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "项目基础sass库",
   "main": "_index.scss",
   "scripts": {
