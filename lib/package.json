@@ -2,7 +2,7 @@
   "name": "rww-sass",
   "version": "1.0.4",
   "description": "项目基础sass库",
-  "main": "_index.scss",
+  "main": "lib/_index.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
