@@ -11,6 +11,7 @@
 // 270deg 从右到左
 // 0deg 从下到上
 // 180deg 从上到下
+// todo 要根据常用颜色自动生成渐变色
 @mixin linear-gradient($from: $c-theme-light, $to: $c-theme, $degree: 90deg){
   background-color: $to;
   background-image: linear-gradient($degree, $from, $to);
