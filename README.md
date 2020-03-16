@@ -1,11 +1,11 @@
 移动端项目基础sass文件,包含常用混合,函数及变量.
 
 ## 目录
-1. [业务背景](#业务背景)
-2. [项目配置](#项目配置)
+- [业务背景](#业务背景)
+- [项目配置](#项目配置)
   - [vue.config.js](#vue.config.js)
-  - [覆盖默认变量](#覆盖默认变量)
-3. [内容介绍](#内容介绍)
+   - [覆盖默认变量](#覆盖默认变量)
+- [内容介绍](#内容介绍)
   - [语法约定](#语法约定)
   - [布局](#布局)
   - [尺寸](#尺寸)
@@ -44,15 +44,15 @@
 }
 
 .ml-2 {
-  margin-left: 10px;
+  margin-left: 8px;
 }
 
 // good
 .title {
   @include text-truncate;
-  width: 100px;
-  height: 100px;
-  margin-left: 10px;
+  width: px2vw(100);
+  height: px2vw(100);
+  margin-left: $s-xs;
 }
 ```
 
@@ -112,6 +112,35 @@ module.exports = {
 - md -> 中号middle的简写
 
 简写完全参照emmet语法: https://docs.emmet.io/cheat-sheet/
+
+### 布局
+
+**弹性伸缩布局flex**
+- @flex-grow // 横向伸缩
+- @flex-column // 纵向伸缩
+
+**定位层级z-index**
+- $z-dropdown: 500
+- $z-sticky: 520
+- $z-fixed: 530
+- $z-modal: 550
+- $z-popover: 560
+- $z-tooltip: 570
+- $z-modal-backdrop: 1040
+
+**绝对定位布局**
+- @fixed-top // 顶部固定
+- @fixed-bottom // 底部固定
+- @sticky-top($top) // 底部吸附(顶部距离) 默认为0
+
+**浮动布局**
+- @clearfix // 清除浮动
+
+### 边框
+- $bd-base: 1px solid $bdc-base; // 内容分割线
+- $bd-comp: 1px solid $bdc-comp; // 组件分割线
+- @bd-hairline // 细边框
+
 
 ### 尺寸
 
@@ -191,3 +220,13 @@ module.exports = {
 **骨架屏颜色**
 $sk-base: #eee; // 元素方块背景色
 $sk-light: #e2e2e2; // 扫光渐变色
+
+
+### 背景
+- @linear-gradient($from, $to, $deg) // 渐变(起始色, 终止色, 角度) 默认主题色
+
+### 文本
+- @text-truncate($rows) // 超出省略(行数) 默认1行
+
+### 函数
+- px2vw($size) // px转vw(px值)
