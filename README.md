@@ -129,8 +129,8 @@ module.exports = {
 - $z-modal-backdrop: 1040
 
 **绝对定位布局**
-- @fixed-top // 顶部固定
-- @fixed-bottom // 底部固定
+- @fixed-top($top) // 顶部固定(顶部距离) 默认为0
+- @fixed-bottom($top) // 底部固定(底部距离) 默认为0
 - @sticky-top($top) // 底部吸附(顶部距离) 默认为0
 
 **浮动布局**
@@ -215,11 +215,11 @@ module.exports = {
 - $bdc-comp: $gray-c; // 组件分割线色，用于弹框/功能/按钮分割线
 
 **阴影色**
-- $bsc-base: $black-1; // 块之间的阴影,按钮的阴影
+- $bxsh-base: $black-1; // 块之间的阴影,按钮的阴影
 
 **骨架屏颜色**
-$sk-base: #eee; // 元素方块背景色
-$sk-light: #e2e2e2; // 扫光渐变色
+- $sk-base: #eee; // 元素方块背景色
+- $sk-light: #e2e2e2; // 扫光渐变色
 
 
 ### 背景
