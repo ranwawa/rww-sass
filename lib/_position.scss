@@ -20,20 +20,20 @@ $z-tooltip: 570 !default;
   z-index: $z-fixed;
 }
 // 悬浮
-@mixin fixed-top {
+@mixin fixed-top($top: 0) {
 	@include fixed;
-  top: 0;
+  top: $top;
+  z-index: $z-fixed;
 }
 
-@mixin fixed-bottom {
+@mixin fixed-bottom($bottom) {
   @include fixed;
-  bottom: 0;
+  bottom: $bottom;
+  z-index: $z-fixed;
 }
 
 @mixin sticky-top($top: 0) {
-  @supports (position: sticky) {
-    position: sticky;
-    top: $top;
-    z-index: $z-sticky;
-  }
+  position: sticky;
+  top: $top;
+  z-index: $z-sticky;
 }
