@@ -6,11 +6,11 @@
 
 
 /* 分割线 */
-$bd-base: 1px solid $bdc-base; // 内容分割线
-$bd-comp: 1px solid $bdc-comp; // 组件分割线
+$bd-base: 1px solid $bdc-base !default; // 内容分割线
+$bd-comp: 1px solid $bdc-comp !default; // 组件分割线
 
 /* 阴影 */
-$bs-base: 0 0 px2vw(10) $bsc-base; // 默认阴影
+$bxsh-base: 0 0 px2vw(10) $bxshc-base !default; // 默认阴影
 
 @mixin bd-hairline ($c: $bdc-base) {
 	&::after {
