@@ -62,11 +62,11 @@
 
 首先要安装全局自动引入公共sass的插件`style-resources-loader`
 ```
-npm install style-resources-loader --save-dev 
+npm install style-resources-loader rww-sass --save-dev 
 ```
 或者
 ```
-yarn add style-resources-loader -dev
+yarn add style-resources-loader rww-sass -dev
 ```
 
 然后在项目根目录下找到或创建`vue.config.js`,配置如下内容
@@ -96,6 +96,20 @@ module.exports = {
 ```
 
 ### 覆盖默认变量
+首先创建一个custom.scss文件,比如说我的设计稿是基于414宽度设计的
+```scss
+$design-width: px2vw(414);
+```
+
+然后在vue.config.js里面,新增`style-resource`配置
+```
+.options({
+  patterns: [
+    'node_modules/rww-sass/_index.scss',
+    'src/assets/scss/custom.scss',
+  ],
+})
+```
 
 ## 内容介绍
 
