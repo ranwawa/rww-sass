@@ -11,5 +11,10 @@
   @return $num / ($design-width / 100) + vw;
 }
 
+// px单位转换为rpx
+@function px2rpx($num) {
+  @return $num * (750 / $design-width) + rpx;
+}
+
 
 
