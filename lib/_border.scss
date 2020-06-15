@@ -12,7 +12,8 @@ $bd-comp: 1px solid $bdc-comp !default; // 组件分割线
 /* 阴影 */
 $bxsh-base: 0 0 px2vw(10) $bxshc-base !default; // 默认阴影
 
-@mixin bd-hairline ($c: $bdc-base) {
+@mixin bd-hairline-base() {
+	position: relative;
 	&::after {
 		position: absolute;
 		box-sizing: border-box;
@@ -20,10 +21,34 @@ $bxsh-base: 0 0 px2vw(10) $bxshc-base !default; // 默认阴影
 		right: -50%;
 		bottom: -50%;
 		left: -50%;
-		border: 1px solid $c;
 		transform: scale(0.5);
 		transform-origin: center;
-		content: ' ';
+		content: " ";
 		pointer-events: none;
+	}
+}
+
+@mixin bd-hairline-top($c: $bdc-base) {
+	@include bd-hairline-base;
+	&::after {
+		border-top: 1px solid $c;
+	}
+}
+@mixin bd-hairline-bottom($c: $bdc-base) {
+	@include bd-hairline-base;
+	&::after {
+		border-bottom: 1px solid $c;
+	}
+}
+@mixin bd-hairline-right($c: $bdc-base) {
+	@include bd-hairline-base;
+	&::after {
+		border-right: 1px solid $c;
+	}
+}
+@mixin bd-hairline-left($c: $bdc-base) {
+	@include bd-hairline-base;
+	&::after {
+		border-left: 1px solid $c;
 	}
 }
