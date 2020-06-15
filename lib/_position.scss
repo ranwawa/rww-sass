@@ -26,7 +26,7 @@ $z-tooltip: 570 !default;
   z-index: $z-fixed;
 }
 
-@mixin fixed-bottom($bottom) {
+@mixin fixed-bottom($bottom: 0) {
   @include fixed;
   bottom: $bottom;
   z-index: $z-fixed;
