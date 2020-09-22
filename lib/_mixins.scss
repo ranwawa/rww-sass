@@ -11,3 +11,13 @@
   border-radius: $bdrs-lg;
   background-color: $bgc-base;
 }
+
+@mixin layout-mask($index: $z-fixed,$color: $bgc-base) {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $z-fixed;
+  background-color: $color;
+}
