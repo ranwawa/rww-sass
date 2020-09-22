@@ -21,7 +21,7 @@
     left: 0;
     top: 50%;
     z-index: 1;
-    width: px2vw(20);
+    width: px2rpx(20);
     height: 120%;
     content: '';
     background: $sk-base -webkit-linear-gradient(left, $sk-base, $sk-light) 0 0 no-repeat;

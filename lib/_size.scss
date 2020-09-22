@@ -8,25 +8,25 @@
 $design-width: 375 !default;
 
 /* 块间尺寸 */
-$s-xxl: px2vw(28) !default; // 24
-$s-xl: px2vw(24) !default; // 24
-$s-lg: px2vw(20) !default; // 20 内容大板块间距
-$s-md: px2vw(16) !default; // 16 主容器水平方向padding
-$s-sm: px2vw(12) !default; // 14 特殊版块和标题版块间距
-$s-xs: px2vw(8) !default; // 8 内容小板块间距
-$s-xxs: px2vw(4) !default; // 4
+$s-xxl: px2rpx(28) !default; // 24
+$s-xl: px2rpx(24) !default; // 24
+$s-lg: px2rpx(20) !default; // 20 内容大板块间距
+$s-md: px2rpx(16) !default; // 16 主容器水平方向padding
+$s-sm: px2rpx(12) !default; // 14 特殊版块和标题版块间距
+$s-xs: px2rpx(8) !default; // 8 内容小板块间距
+$s-xxs: px2rpx(4) !default; // 4
 
 /* 字体大小 */
-$fz-xxl: px2vw(20) !default; // 20 大标题字号，用于顶部导航标题
-$fz-xl: px2vw(18) !default; // 18 大标题字号，用于顶部导航标题
-$fz-lg: px2vw(16) !default; // 16 小标题字号，用于正文标题，着重显示文字
-$fz-md: px2vw(14) !default; // 14 正文字号，用于内容文本
-$fz-sm: px2vw(12) !default; // 12 提示字号，用于备注/菜单分割/标签
-$fz-xs: px2vw(10) !default;
+$fz-xxl: px2rpx(20) !default; // 20 大标题字号，用于顶部导航标题
+$fz-xl: px2rpx(18) !default; // 18 大标题字号，用于顶部导航标题
+$fz-lg: px2rpx(16) !default; // 16 小标题字号，用于正文标题，着重显示文字
+$fz-md: px2rpx(14) !default; // 14 正文字号，用于内容文本
+$fz-sm: px2rpx(12) !default; // 12 提示字号，用于备注/菜单分割/标签
+$fz-xs: px2rpx(10) !default;
 
 /* 边框圆角尺寸 */
 $bdrs-round: 50% !default; // 大圆角，用于块儿
-$bdrs-lg: px2vw(8) !default; // 大圆角，用于块儿
-$bdrs-sm: px2vw(4) !default; // 小圆角，用于按钮
+$bdrs-lg: px2rpx(8) !default; // 大圆角，用于块儿
+$bdrs-sm: px2rpx(4) !default; // 小圆角，用于按钮
 $bdrs-none: 0 !default; // 小圆角，用于按钮
 
